@@ -28,7 +28,7 @@ public class NettyClientConfigTest {
 
   @Test
   public void testChangeConfigBySystemProperty() throws NoSuchFieldException, IllegalAccessException {
-    
+
 
     System.setProperty(NettySystemConfig.COM_ROCKETMQ_REMOTING_CLIENT_WORKER_SIZE, "1");
     System.setProperty(NettySystemConfig.COM_ROCKETMQ_REMOTING_CLIENT_CONNECT_TIMEOUT, "2000");

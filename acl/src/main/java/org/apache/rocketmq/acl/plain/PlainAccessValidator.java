@@ -176,7 +176,7 @@ public class PlainAccessValidator implements AccessValidator {
     @Override public AclConfig getAllAclConfig() {
         return aclPlugEngine.getAllAclConfig();
     }
-    
+
     @Override
     public Map<String, DataVersion> getAllAclConfigVersion() {
         return aclPlugEngine.getDataVersionMap();

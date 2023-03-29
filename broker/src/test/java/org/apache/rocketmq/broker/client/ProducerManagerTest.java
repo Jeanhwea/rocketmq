@@ -104,7 +104,7 @@ public class ProducerManagerTest {
     public void testGetGroupChannelTable() throws Exception {
         producerManager.registerProducer(group, clientInfo);
         Map<Channel, ClientChannelInfo> oldMap = producerManager.getGroupChannelTable().get(group);
-        
+
         producerManager.unregisterProducer(group, clientInfo);
         assertThat(oldMap.size()).isEqualTo(0);
     }

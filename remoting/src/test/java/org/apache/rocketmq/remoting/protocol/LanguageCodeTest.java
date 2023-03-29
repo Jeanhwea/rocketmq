@@ -29,5 +29,5 @@ public class LanguageCodeTest {
         code = LanguageCode.valueOf("RUST");
         assertThat(code).isEqualTo(LanguageCode.RUST);
     }
-    
+
 }

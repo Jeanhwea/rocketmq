@@ -144,7 +144,7 @@ public class DefaultMQProducerWithTraceTest {
 
     }
 
-    
+
     @Test
     public void testProducerWithTraceTLS() {
         DefaultMQProducer producer = new DefaultMQProducer(producerGroupTemp, true);
@@ -152,7 +152,7 @@ public class DefaultMQProducerWithTraceTest {
         AsyncTraceDispatcher asyncTraceDispatcher = (AsyncTraceDispatcher) producer.getTraceDispatcher();
         Assert.assertTrue(asyncTraceDispatcher.getTraceProducer().isUseTLS());
     }
-    
+
     @After
     public void terminate() {
         producer.shutdown();

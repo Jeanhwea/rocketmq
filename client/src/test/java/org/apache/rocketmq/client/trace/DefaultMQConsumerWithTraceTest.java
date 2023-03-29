@@ -239,7 +239,7 @@ public class DefaultMQConsumerWithTraceTest {
         assertThat(msg.getTopic()).isEqualTo(topic);
         assertThat(msg.getBody()).isEqualTo(new byte[] {'a'});
     }
-    
+
     @Test
     public void testPushConsumerWithTraceTLS() {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("consumerGroup", true);
